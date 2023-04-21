@@ -34,7 +34,8 @@ class RankedSession:
     """
     Represents a ranked session
     """
-    def __init__(self, points_start: int, points_end: int, matches: list[RankedMatch]):
+    def __init__(self, date: str, points_start: int, points_end: int, matches: list[RankedMatch]):
+        self.date = date
         self.points_start = points_start
         self.points_end = points_end
         self.matches = matches
